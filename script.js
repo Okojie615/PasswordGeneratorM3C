@@ -49,6 +49,10 @@ function randomizedPassword(upper, lower, number, symbol, length) {
     return '';
   }
 
+  if(length > 128 || length < 8) {
+    return '';
+  }
+  
 for (let i = 0; i < length; i += checkedUnchecked) {
     typesArray.forEach(type => {
       const functionName = Object.keys(type)[0];
