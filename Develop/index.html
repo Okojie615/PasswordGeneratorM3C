@@ -25,7 +25,29 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate"  class="btn">Generate Password</button>
+        </div>
+        <div class="criteria">
+          <div class="options" id="length">
+            <label for="length">Length of password:</label>
+            <input type="number" id="passwordLength" min="8" max="16" value="20" />
+          </div>
+          <div class="options" id="uppercase" >
+            <label for="uppercase">Includes uppercased letters</label>
+            <input type="checkbox" id="uppercaseStatus" checked />
+          </div>
+          <div class="options" id="lowercase" checked>
+            <label for="lowercase">Includes lowercased letters</label>
+            <input type="checkbox" id="lowercaseStatus" checked />
+          </div>
+          <div class="options" id="numbers"  checked>
+            <label for="numbers">Includes numbers</label>
+            <input type="checkbox" id="numbersStatus" checked />
+          </div>
+          <div class="options" id="symbols" checked> 
+            <label for="symbols">Includes symbols</label>
+            <input type="checkbox" id="symbolsStatus" checked />
+          </div>
         </div>
       </div>
     </div>
